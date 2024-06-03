@@ -1,0 +1,15 @@
+<nav>
+
+  <ul>
+    <li><img src="/kanban.png" alt="kanban"></li>
+    <li class="menu-items">
+      @if(isLoggedIn()){
+      <!-- <a [routerLinkActive]="'active'" routerLink="/boards">Boards</a> -->
+      <a (click)="signOut()">Sign out</a>
+      } @else {
+      <a [routerLinkActive]="'active'" routerLink="/login">Login/Registrar</a>
+      }
+    </li>
+  </ul>
+</nav>
+
