@@ -11,6 +11,17 @@ body {
   background: v.$background-color;
 }
 
+nav {
+
+  height: auto !important;
+}
+
+nav img {
+  width: 80px;
+  padding-top: 25px;
+}
+
+
 .small-centered-form {
   display: flex;
   flex-direction: column;
@@ -51,4 +62,15 @@ form {
 
 .kb-link {
   @include t.kb-link;
+}
+
+
+.mat-mdc-unelevated-button.mat-primary {
+  background: #4202bf !important;
+}
+
+
+mat-card.mat-mdc-card.mdc-card:hover {
+  box-shadow: 1px 1px 10px #00000052 !important;
+  transition: all .3s;
 }
